@@ -1,4 +1,14 @@
+ # Sit on chair
+
 https://piotrthread.github.io/sitonchair/
 
-Just a simple layout from workshop, made with React.js.
-Mobile version + desktop version.
+>WWW Layout for CodersLab Workshop. Mobile and desktop version.<br/>
+
+Used technologies:<br/>
+* HTML
+* SCSS
+* React.js
+* JavaScript
+* ES2015
+* Webpack
+<br/><br/>
