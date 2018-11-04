@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+    .container{
+        width:100vw;
+        margin:0 auto;
+        
+    }
+
+    @media only screen and (min-width:1024px) { 
+        .container{
+            width:80vw;
+        }
+        nav{
+            background-color:#222222;
+        }
+        .pricing{
+            background-color: rgb(245,245,245);
+        }
+        footer{
+            background-color:#222222;
+        }
+    }    
+    
+
+

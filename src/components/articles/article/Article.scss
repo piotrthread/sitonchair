@@ -1,0 +1,40 @@
+$primaryColor: #27c7ab;
+
+.article{
+    min-height:30vh;
+    border: 1px solid lightgray;
+    margin:2em 0;
+    width:80%;
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size:10px;
+}
+h3{
+    border-bottom: 5px solid $primaryColor;
+    padding-bottom:5px;
+    width:160px;
+    font-size:1.5em;
+    margin-left:1.2em;
+}
+.box{
+    background-color: rgba(255,255,255,.35);
+    height: 7em;
+    display:flex;
+    align-items: center;
+}
+p{
+    padding:1.1em;
+    font-size:1.5em;
+    text-align: justify;
+}
+
+@media only screen and (min-width:1024px) {
+
+    .article{
+        width:32%;
+    }
+
+}
+

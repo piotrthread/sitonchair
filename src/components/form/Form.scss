@@ -1,0 +1,90 @@
+$primaryColor: #27c7ab;
+
+.form{
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:10px;
+
+    p.header{
+        font-size:2em;
+        border-bottom: 5px solid $primaryColor;
+        width:45vw;
+        height:2.5em;
+        text-align: center;
+        margin:0 auto;
+        margin-top:1em;
+        margin-bottom:2em;
+        
+    }
+
+button{
+    background-color: $primaryColor;
+    color:white;
+    width:40vw;
+    height: 50px;
+    border:0;
+    border-radius: 25px;
+    margin:3em;
+    font-size:1.5em;
+    cursor: pointer;
+}
+form{
+    width:80vw;
+    margin:0;
+}
+input{
+    border: 1px solid $primaryColor;
+    width:80vw;
+    margin:1em 0;
+    height:50px;
+    padding:10px;
+    font-size:1.5em;
+    color:#dedede;
+    
+}
+
+}
+@media only screen and (min-width:1024px) {
+
+.form{
+position: relative;
+
+p.header{
+    display:none;
+}
+
+    &:after{
+        content:"CONTACT";
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top:30px;
+        color:black;
+        font-size: 19px;
+        margin:0 auto;
+        border-bottom: 5px solid $primaryColor;
+        width:150px;
+        text-align: center;
+        padding:10px;
+        
+    }
+    form{
+        margin-top:120px;
+        width:50%;
+    }
+
+    input{
+        width:100%;
+    }
+    button{
+        width:15%;
+    }
+}
+
+}
+
+

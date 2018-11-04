@@ -1,0 +1,30 @@
+
+
+.footer{
+    background-color: #222222;
+    height:120px;
+    position:relative;
+
+    p{
+        color: gray;
+        font-size:12px;
+        position: absolute;
+        bottom:0;
+        left:0;
+        padding:5vw;
+    }
+
+    .icons{
+        position: absolute;
+        right:0;
+        top:5px;
+        padding:1.5em;
+        margin-bottom:5px;
+    }
+
+    img{
+        transform:scale(0.7);
+        cursor: pointer;
+    }
+}
+

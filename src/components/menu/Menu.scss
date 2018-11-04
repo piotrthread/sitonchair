@@ -1,0 +1,141 @@
+$primaryColor: #27c7ab;
+
+
+.menuContainer{
+    background-color:#222222;
+    position: relative;
+
+    p.logo{
+        color:white;
+        font-weight: 700;
+        font-size:20px;
+        padding:20px;
+        height:60px;
+        span.on{
+            color: $primaryColor;
+            font-weight: 700;
+        }
+    }
+
+    div.hamburgerMenu{
+        border-top:5px solid white;
+        border-bottom:5px solid white;
+        width:30px;
+        height:30px;
+        position:absolute;
+        right:15px;
+        top:15px;
+        cursor: pointer;
+        &:after{
+            content:"";
+            display:block;
+            background-color: white;
+            width:30px;
+            height:5px;
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+    }
+    div.closeMenu{
+        width:30px;
+        height:30px;
+        position:absolute;
+        right:15px;
+        top:15px;
+        cursor: pointer;
+        &:after{
+            content:"";
+            display:block;
+            background-color: white;
+            width:30px;
+            height:5px;
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin:auto;
+            transform-origin: 50% 50%;
+            transform:rotate(-45deg);
+        }
+        &:before{
+            content:"";
+            display:block;
+            background-color: white;
+            width:30px;
+            height:5px;
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin:auto;
+            transform-origin: 50% 50%;
+            transform:rotate(45deg);
+        }
+    }
+
+    .menu{
+        color:white;
+        background-color:#222222 ;
+        list-style-type: none;
+        margin:0;
+        padding:20px;
+        border-top: 1px solid white;
+        li:first-child{
+            color: $primaryColor;
+        }
+        li{
+            padding:5px 0;
+            .submenu{
+                color:white;
+                list-style-type: none;
+                padding:8px;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    color:lightgray;
+                    margin-left:20px;
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
+
+
+}
+.menuDesktop{
+    display:none;
+}
+
+@media only screen and (min-width:1024px) {
+
+div.hamburgerMenu{
+    display: none;
+}
+.menuContainer{
+    font-size: 10px;
+}
+.menuDesktop{
+    list-style-type: none;
+    position: absolute;
+    right:0;
+    top:0;
+    display: inline-block;
+    padding:2em;
+    li{
+        
+        display:inline-block;
+        color:white;
+        margin-left: 2em;
+        font-size:1.5em;
+        cursor: pointer;
+        transition: color .3s;
+
+        &:hover{
+            color:$primaryColor;
+        }
+
+    }
+}
+
+}

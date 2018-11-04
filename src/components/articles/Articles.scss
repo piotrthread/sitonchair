@@ -1,0 +1,33 @@
+
+
+.articles{
+    padding: 1.4em 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clear:both;
+    &:after{
+        content:"";
+        display: block;
+        position: absolute;
+        border-top: 1px solid gray;
+        width:80%;
+        height:1px;
+        top:0;
+        left:0;
+        right:0;
+        margin:auto;
+        z-index:1;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+.articles{
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+}
+
