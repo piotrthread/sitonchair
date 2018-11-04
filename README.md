@@ -12,3 +12,5 @@ Used technologies:<br/>
 * ES2015
 * Webpack
 <br/><br/>
+
+![Screenshot](./docs/images/layout.png)
